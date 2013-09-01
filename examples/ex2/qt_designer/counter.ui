@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>32</y>
+     <width>86</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hide label</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>80</y>
+     <width>98</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Label to hide...</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>70</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

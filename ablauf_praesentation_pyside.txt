@@ -1,0 +1,14 @@
+Presentation PySide
+===================
+
+- Hello World Example
+- What is PySide (python bindings for Qt framework which is a C++ library)
+- Difference to PyQt (open source, license, minor coding differences, more pythonic)
+- Tools to write your PySide apps: sublime (text editor, pyside plugin available), QtDesigner
+- 3 possibilities to generate UIs (show how generating the same example looks like for each of them):
+  - QtDesigner (WYSIWYG)
+  - qml (simple UI modelling language, looks a bit like CSS)
+  - programmatically (python)
+- Events: Qt's signal/slot mechanism (also show a simple example, e.g. pressing a button increases counter in TextView)
+- MVC (Qt thought for MVC architecture), show a simple python MVC setup for PySide
+- If time remains: automatic database integration and viewing with QSql...
