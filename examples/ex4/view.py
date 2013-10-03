@@ -7,13 +7,14 @@ class View(QWidget):
     def __init__(self, person, parent=None):
         super(View, self).__init__(parent)
         self.person = person
-        self.layout = QGridLayout(self)
-        self.grid = QGridLayout()
-        self.layout.addLayout(self.grid, 1, 1)
         self.lb_name = QLabel(self.person.name)
         self.lb_age = QLabel(str(self.person.age))
         self.lb_weight = QLabel(str(self.person.weight))
         self.pb_eat = QPushButton("Eat")
+
+        self.layout = QGridLayout(self)
+        self.grid = QGridLayout()
+        self.layout.addLayout(self.grid, 1, 1)
         self.grid.addWidget(QLabel("Name:"), 0, 0)
         self.grid.addWidget(self.lb_name, 0, 1)
         self.grid.addWidget(QLabel("Age:"), 1, 0)
